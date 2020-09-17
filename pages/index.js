@@ -1,16 +1,21 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
+
+
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+
+        <title>Trololol</title>
         <link rel="icon" href="/favicon.ico" />
+
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to<Link href="posts/first-post"><a href="https://nextjs.org">Next.js!</a></Link>
         </h1>
 
         <p className="description">
@@ -199,9 +204,10 @@ export default function Home() {
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
+        box-sizing: border-box;
 
-        * {
-          box-sizing: border-box;
+        *, *:before, *:after {
+          box-sizing: inherit;
         }
       `}</style>
     </div>
