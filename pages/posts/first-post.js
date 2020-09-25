@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Layout from '../../components/Layout';
+import Link from "next/link";
+import Layout from "../../components/Layout";
 
 export default function FirstPost() {
   return (
@@ -11,5 +11,5 @@ export default function FirstPost() {
         </Link>
       </h2>
     </Layout>
-  )
+  );
 }
