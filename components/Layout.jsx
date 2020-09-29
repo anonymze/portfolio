@@ -3,16 +3,16 @@ import util_styles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Head from 'next/head';
 
-const name = 'Yann'
+const name = 'Yann';
 export const site_title = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
-    console.log(home)
+    // console.log(home)
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>First post</title>
+        <title>Portfolio Yann | Ano</title>
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={site_title} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>    
+      <header role="nav" className={styles.header}>    
         {home ? (
           <>
             <img

@@ -1,16 +1,13 @@
-import Head from "next/head";
-import Link from "next/link";
-import Layout, { site_title } from "../components/Layout";
+import Layout from "../components/Layout";
 import util_styles from "../styles/utils.module.css";
 import Button from "../components/utilities/Button";
 import { getSortedPostsData } from "../lib/posts";
+import Link from 'next/link';
+import Date from '../components/date';
 
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <Head>
-        <title>{site_title}</title>
-      </Head>
       <section className={util_styles.headingMd}>
         <p>
           Slt je suis le bg du 31500, à nous les zoulettes, Godefroy le Hardi
@@ -21,22 +18,32 @@ export default function Home({ allPostsData }) {
         <h2 className={util_styles.headingLg}>Blog</h2>
         <ul className={util_styles.list}>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={util_styles.listItem} key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
-            </li>
+           <li className={util_styles.listItem} key={id}>
+           <Link href={`/posts/${id}`}>
+             <a>{title}</a>
+           </Link>
+           <br />
+           <small className={util_styles.lightText}>
+             <Date dateString={date} />
+           </small>
+         </li>
+         
           ))}
         </ul>
       </section>
-      <Button>Hey</Button>
+      <Button color="red">Hey</Button>
     </Layout>
   );
 }
 
 export async function getStaticProps() {
+
+  // const res = await fetch('..')
+  // return res.json();
+
+  // return databaseClient.query('SELECT posts...')
+
+
   const allPostsData = getSortedPostsData();
   return {
     props: {
@@ -44,6 +51,15 @@ export async function getStaticProps() {
     },
   };
 }
+
+// export async function getServerSideProps(context) {
+//   return {
+//     props: {
+//       // props for your component
+//     }
+//   }
+// }
+
 
 // <style jsx global>{`
 //   html,
