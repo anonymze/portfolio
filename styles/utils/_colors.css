@@ -1,0 +1,14 @@
+:root {
+    /* colors  */
+    --color-primary: red;
+    --color-secondary: red;
+    --color-dark: #242121;
+    --color-light: #6d7777;
+    --color-semi-light: #454747;
+
+    /* buttons */
+    --button-blue: #0079ff;
+    --button-purple: #4A2BAF;
+    --button-magenta: #9e2b79;
+    --button-dark-blue: #4146b5;
+}

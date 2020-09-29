@@ -1,68 +1,69 @@
-import styles from './layout.module.css';
-import util_styles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Head from 'next/head';
-
-const name = 'Yann';
-export const site_title = 'Next.js Sample Website'
+import header_module from '../styles/layout/header.module.css';
 
 export default function Layout({ children, home }) {
-    // console.log(home)
+  // console.log(home)
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>Portfolio Yann | Ano</title>
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Web developer portfolio, full-stack, only 1 year of experience."
         />
-        <meta
+        {/* <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
             site_title
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
-        <meta name="og:title" content={site_title} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="og:title" content='{site_title}' />
+        <meta name="twitter:card" content="summary_large_image" /> */}
       </Head>
-      <header role="nav" className={styles.header}>    
-        {home ? (
-          <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${util_styles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={util_styles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${util_styles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={util_styles.headingLg}>
-              <Link href="/">
-                <a className={util_styles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
+      <header className={header_module.header}>
+        <nav className={header_module.nav}>
+          <Link href="/" ><a aria-label="Click to return to home page"><img className={header_module.logo} src="/images/logo.png" alt="Logo web developer" /></a></Link>
+          <div className={header_module.links}>
+            <Link href="/"><a className={header_module.link} aria-label="Lien vers la page mes projets">My Projects</a></Link>
+            <Link href="/"><a className={header_module.link} aria-label="Ouverture de la boîte mail avec mon adresse">Contact me</a></Link>
+          </div>
+        </nav>
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div>
           <Link href="/">
-            <a>← Back to home</a>
+            <a>Back to home</a>
           </Link>
         </div>
       )}
-    </div>
+      <footer className="border-t-2 border-solid border-gray-300 m-6">
+        <div className="p-8">
+          <ul className="flex justify-center">
+            <li className="flex-1 text-center">
+              <Link href="/" ><a aria-label="">My Projects</a></Link>
+            </li>
+            <li className="flex-1 text-center">
+              <Link href="/" ><a aria-label="">Contact Me</a></Link>
+            </li>
+          </ul>
+        </div>
+        <div className="p-8">
+          <ul className="flex justify-start">
+            <li className="flex-1 text-center">
+              <Link href="/"><a aria-label="" className="flex-1 text-center">Twitter</a></Link>
+            </li>
+            <li className="flex-1 text-center">
+              <Link href="/"><a aria-label="" className="flex-1 text-center">Facebook</a></Link>
+            </li>
+            <li className="flex-1 text-center">
+              <Link href="/" ><a aria-label="">Made by Yann | Ano</a></Link>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </>
   )
 }

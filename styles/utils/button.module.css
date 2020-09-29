@@ -1,0 +1,13 @@
+.button {
+  margin: 0;
+  padding: 0 3.5rem;
+  height: 3.5rem;
+  line-height: 2.8rem;
+  border-radius: 7px;
+  outline: none !important;
+  outline-offset: none !important;
+  font-size: 20px;
+  color: white;
+  white-space: nowrap;
+  transition: opacity 0.1s;
+}
