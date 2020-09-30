@@ -8,7 +8,7 @@ export default function Layout({ children, home }) {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>Portfolio Yann | Ano</title>
+        <title>Yann | Portfolio</title>
         <meta
           name="description"
           content="Web developer portfolio, full-stack, only 1 year of experience."
@@ -39,8 +39,8 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
-      <footer className="border-t-2 border-solid border-gray-300 m-6">
-        <div className="p-8">
+      <footer className="border-t-2 border-solid border-gray-300 p-6 text-gray-700">
+        <div className="p-6">
           <ul className="flex justify-center">
             <li className="flex-1 text-center">
               <Link href="/" ><a aria-label="">My Projects</a></Link>
