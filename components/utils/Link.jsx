@@ -1,7 +1,7 @@
-import Link from 'next/link';
+import button_module from '../../styles/utils/link.module.css';
 
-export default function Link({children, color}) {
+export default function Button({children, color}) {
     return(
-        <Link href="/" aria-label=""><button type="button">{children}</button></Link>
+        <a type="button" className={button_module.button} style={{backgroundColor: `var(--button-${color})`, boxShadow: `0 4px 14px 0 var(--button-${color})`}}>{children}</a>
     )
 }

@@ -21,9 +21,9 @@ export default function Home() {
       </div>
       <article className="border-t-2 border-solid border-gray-300">
         <section className="m-16">
-          <h2 className="font-bold text-4xl mb-12">Travaux récents</h2>
+          <h2 className="font-bold text-4xl mb-12">Travaux en cours</h2>
           <div className="flex flex-wrap justify-center w-100">
-            <div className="flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ height: "500px", boxShadow: '0 4px 14px 0 var(--button-purple)'}}>
+            <div className="flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-purple)'}}>
               <div className="w-1/2 p-16">
                 <p className="text-xl text-white">2020</p>
                 <h3 className="text-5xl font-bold text-white mt-2 mb-16">Smash Lab</h3>
@@ -43,7 +43,7 @@ export default function Home() {
                 <img className="block h-full rounded-l-md" alt="" src="/images/logo.png" />
               </div>
             </div>
-            <div className="flex m-10 w-2/5 bg-pink-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ height: "500px", boxShadow: '0 4px 14px 0 var(--button-magenta)'}}>
+            <div className="flex m-10 w-2/5 bg-pink-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-magenta)'}}>
             <div className="w-1/2 p-16">
                 <p className="text-xl text-white">2020</p>
                 <h3 className="text-5xl font-bold text-white mt-2 mb-16">Smash Lab</h3>
@@ -63,7 +63,7 @@ export default function Home() {
                 <img className="block h-full rounded-l-md" alt="" src="/images/logo.png" />
               </div>
             </div>
-            <div className="flex m-10 w-2/5 bg-green-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ height: "500px",boxShadow: '0 4px 14px 0 var(--button-green)' }}>
+            <div className="flex m-10 w-2/5 bg-green-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{minWidth: "800px", height: "500px",boxShadow: '0 4px 14px 0 var(--button-green)' }}>
             <div className="w-1/2 p-16">
                 <p className="text-xl text-white">2020</p>
                 <h3 className="text-5xl font-bold text-white mt-2 mb-16">Smash Lab</h3>
@@ -83,7 +83,7 @@ export default function Home() {
                 <img className="block h-full rounded-l-md" alt="" src="/images/logo.png" />
               </div>
             </div>
-            <div className="flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ height: "500px", boxShadow: '0 4px 14px 0 var(--button-blue)' }}>
+            <div className="flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-blue)' }}>
             <div className="w-1/2 p-16">
                 <p className="text-xl text-white">2020</p>
                 <h3 className="text-5xl font-bold text-white mt-2 mb-16">Smash Lab</h3>
@@ -110,45 +110,3 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-
-//   // const res = await fetch('..')
-//   // return res.json();
-
-//   // return databaseClient.query('SELECT posts...')
-
-
-//   const allPostsData = getSortedPostsData();
-//   return {
-//     props: {
-//       allPostsData,
-//     },
-//   };
-// }
-
-// export async function getServerSideProps(context) {
-//   return {
-//     props: {
-//       // props for your component
-//     }
-//   }
-// }
-
-
-// <style jsx global>{`
-//   html,
-//   body {
-//     padding: 0;
-//     margin: 0;
-//     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-//       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-//       sans-serif;
-//     box-sizing: border-box;
-//   }
-
-//   *,
-//   *:before,
-//   *:after {
-//     box-sizing: inherit;
-//   }
-// `}</style>

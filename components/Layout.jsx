@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
         <nav className={header_module.nav}>
           <Link href="/" ><a aria-label="Click to return to home page"><img className={header_module.logo} src="/images/logo.png" alt="Logo web developer" /></a></Link>
           <div className={header_module.links}>
-            <Link href="/"><a className={header_module.link} aria-label="Lien vers la page mes projets">My Projects</a></Link>
+            <Link href="projects"><a className={header_module.link} aria-label="Lien vers la page mes projets">My Projects</a></Link>
             <Link href="/"><a className={header_module.link} aria-label="Ouverture de la boîte mail avec mon adresse">Contact me</a></Link>
           </div>
         </nav>
@@ -43,7 +43,7 @@ export default function Layout({ children, home }) {
         <div className="p-6">
           <ul className="flex justify-center">
             <li className="flex-1 text-center">
-              <Link href="/" ><a aria-label="">My Projects</a></Link>
+              <Link href="projects" ><a aria-label="">My Projects</a></Link>
             </li>
             <li className="flex-1 text-center">
               <Link href="/" ><a aria-label="">Contact Me</a></Link>
