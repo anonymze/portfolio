@@ -45,7 +45,8 @@ export default function Home() {
             variants={variants}
             initial="hide"
             animate="show"
-            transition={{ ease: "anticipate", duration: "0.8" }} className="flex flex-wrap justify-center w-100">
+            transition={{ ease: "anticipate", duration: "0.8" }}
+            className="flex flex-wrap justify-center w-100">
 
             <div className="relative flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-purple)' }}>
               <div className="w-1/2 p-16">
