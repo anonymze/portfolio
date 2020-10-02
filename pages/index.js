@@ -1,15 +1,33 @@
 import Layout from "../components/Layout";
 import home_module from '../styles/pages/home.module.css';
 import Button from '../components/utils/Button';
+import Link from 'next/link';
+import { motion } from "framer-motion";
+
+const variants = {
+  hide: {
+    x: -1500,
+    opacity: 0
+  },
+  show: {
+    x: 0,
+    opacity: 1
+  }
+}
 
 export default function Home() {
   return (
     <Layout home>
-      <div className={home_module.presentation}>
+      <motion.div
+        variants={variants}
+        initial="hide"
+        animate="show"
+        transition={{ ease: "anticipate", duration: "0.8" }}
+        className={home_module.presentation}>
         <div className={home_module.presentation_left}>
           <p className={home_module.left_title}>Bonjour, je suis Yann,</p>
           <p className={home_module.left_text}>un développeur web/mobile full stack</p>
-          <Button color="blue">Dites moi bonjour !</Button>
+          <Button color="blue">Dites moi coucou !</Button>
         </div>
         <div className={home_module.presentation_right}>
           <p className={home_module.right_text}>Je suis un développeur basé à Toulouse. Je travail pour la compagnie <span className={home_module.langages}>Inconito</span> en tant qu'alternant, je suis sur ma première année d'experience avec le digital.<br />
@@ -18,92 +36,53 @@ export default function Home() {
           <p className={home_module.right_text}>Je vise à accumuler de l'expérience <span className={home_module.langages}>full-stack</span> pour la polyvalence et l'autonomie.</p>
           <p className={home_module.right_text}>Je fais énormément d'intégration mais je recherche un bagage plus important en back-end.</p>
         </div>
-      </div>
+      </motion.div>
       <article className="border-t-2 border-solid border-gray-300">
         <section className="m-16">
-          <h2 className="font-bold text-4xl mb-12">Travaux en cours</h2>
-          <div className="flex flex-wrap justify-center w-100">
-            <div className="flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-purple)'}}>
+          <h2 className="font-bold text-4xl mb-12">Projets en cours</h2>
+
+          <motion.div
+            variants={variants}
+            initial="hide"
+            animate="show"
+            transition={{ ease: "anticipate", duration: "0.8" }} className="flex flex-wrap justify-center w-100">
+
+            <div className="relative flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-purple)' }}>
+              <div className="w-1/2 p-16">
+                <p className="text-xl text-white">2020</p>
+                <h3 className="text-5xl font-bold text-white mt-2 mb-16">Association gaming T5</h3>
+                <p className="text-xl text-white leading-8">Full-stack développement
+                  <br />
+                Application web
+                </p>
+                <div className="absolute" style={{ bottom: "4rem" }}>
+                  <img className="inline-block w-12 mx-2" src="/images/icones_langage/wordpress.png" alt="Logo wordpress" title="Wordpress" />
+                </div>
+              </div>
+              <div className="w-1/2 py-8">
+                <img className="block h-full rounded-l-md" alt="" src="/images/images_card/t5.png" />
+              </div></div>
+
+            <a className="relative flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-blue)' }}>
               <div className="w-1/2 p-16">
                 <p className="text-xl text-white">2020</p>
                 <h3 className="text-5xl font-bold text-white mt-2 mb-16">Smash Lab</h3>
-                <p className="mb-16 text-xl text-white leading-8">Full-stack development
+                <p className="text-xl text-white leading-8">Full-stack développement
                   <br />
-                Mobile App
+                Application mobile
                 </p>
-                <div className="pt-12">
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
+                <div className="absolute" style={{ bottom: "4rem" }}>
+                  <img className="inline-block w-12 mx-2" src="/images/icones_langage/ionic.png" alt="Logo Ionic" title="Ionic" />
+                  <img className="inline-block w-12 mx-2" src="/images/icones_langage/typescript.png" alt="Logo Typescript" title="Typescript" />
+                  <img className="inline-block w-12 mx-2" src="/images/icones_langage/laravel.png" alt="Logo Laravel" title="Laravel" />
                 </div>
               </div>
               <div className="w-1/2 py-8">
-                <img className="block h-full rounded-l-md" alt="" src="/images/logo.png" />
+                <img className="block w-full h-full rounded-l-md object-contain object-left" alt="" src="/images/images_card/smash_lab.png" />
               </div>
-            </div>
-            <div className="flex m-10 w-2/5 bg-pink-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-magenta)'}}>
-            <div className="w-1/2 p-16">
-                <p className="text-xl text-white">2020</p>
-                <h3 className="text-5xl font-bold text-white mt-2 mb-16">Smash Lab</h3>
-                <p className="mb-16 text-xl text-white leading-8">Full-stack development
-                  <br />
-                Mobile App
-                </p>
-                <div className="pt-12">
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                </div>
-              </div>
-              <div className="w-1/2 py-8">
-                <img className="block h-full rounded-l-md" alt="" src="/images/logo.png" />
-              </div>
-            </div>
-            <div className="flex m-10 w-2/5 bg-green-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{minWidth: "800px", height: "500px",boxShadow: '0 4px 14px 0 var(--button-green)' }}>
-            <div className="w-1/2 p-16">
-                <p className="text-xl text-white">2020</p>
-                <h3 className="text-5xl font-bold text-white mt-2 mb-16">Smash Lab</h3>
-                <p className="mb-16 text-xl text-white leading-8">Full-stack development
-                  <br />
-                Mobile App
-                </p>
-                <div className="pt-12">
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                </div>
-              </div>
-              <div className="w-1/2 py-8">
-                <img className="block h-full rounded-l-md" alt="" src="/images/logo.png" />
-              </div>
-            </div>
-            <div className="flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-blue)' }}>
-            <div className="w-1/2 p-16">
-                <p className="text-xl text-white">2020</p>
-                <h3 className="text-5xl font-bold text-white mt-2 mb-16">Smash Lab</h3>
-                <p className="mb-16 text-xl text-white leading-8">Full-stack development
-                  <br />
-                Mobile App
-                </p>
-                <div className="pt-12">
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                  <img className="inline-block w-12 mx-1" src="/images/logo.png" alt=""/>
-                </div>
-              </div>
-              <div className="w-1/2 py-8">
-                <img className="block h-full rounded-l-md" alt="" src="/images/logo.png" />
-              </div>
-            </div>
-          </div>
+            </a>
+
+          </motion.div>
         </section>
       </article>
     </Layout>

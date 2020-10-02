@@ -1,8 +1,9 @@
 .button {
+  display: inline-block;
   margin: 0;
   padding: 0 3.5rem;
   height: 3.5rem;
-  line-height: 2.8rem;
+  line-height: 3.5rem;
   border-radius: 7px;
   outline: none !important;
   outline-offset: none !important;
