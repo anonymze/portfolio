@@ -25,4 +25,6 @@
 .link {
   margin: 0 2rem;
   color: var(--color-light);
+  font-size: 20px;
+  font-weight: 300;
 }

@@ -40,14 +40,14 @@ export default function Layout({ children, home }) {
         </Link_button>
   )
 }
-<footer className="border-t-2 border-solid border-gray-300 p-6 text-gray-700">
+<footer className="m-8 border-t-2 border-solid border-gray-300 p-6 text-gray-700">
   <div className="p-6">
     <ul className="flex justify-center">
       <li className="flex-1 text-center">
-        <Link href="projects" ><a aria-label="">Mes projets</a></Link>
+        <Link href="projects" ><a className="font-light text-xl" aria-label="Lien vers la page mes projets">Mes projets</a></Link>
       </li>
       <li className="flex-1 text-center">
-        <Link href="/" ><a aria-label="">Me contacter</a></Link>
+        <Link href="/" ><a className="font-light text-xl" aria-label="Lien d'info pour me contacter">Me contacter</a></Link>
       </li>
     </ul>
   </div>

@@ -37,8 +37,8 @@ export default function Home() {
           <p className={home_module.right_text}>Je fais énormément d'intégration mais je recherche un bagage plus important en back-end.</p>
         </div>
       </motion.div>
-      <article className="border-t-2 border-solid border-gray-300">
-        <section className="m-16">
+      <article className="border-t-2 border-solid border-gray-300 border-b-2">
+        <section className="mt-16 mx-16 pb-48 ">
           <h2 className="font-bold text-4xl mb-12">Projets en cours</h2>
 
           <motion.div
@@ -46,7 +46,7 @@ export default function Home() {
             initial="hide"
             animate="show"
             transition={{ ease: "anticipate", duration: "0.8" }}
-            className="flex flex-wrap justify-center w-100">
+            className="flex flex-wrap justify-center w-100 ">
 
             <div className="relative flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-purple)' }}>
               <div className="w-1/2 p-16">
@@ -82,10 +82,49 @@ export default function Home() {
                 <img className="block w-full h-full rounded-l-md object-contain object-left" alt="" src="/images/images_card/smash_lab.png" />
               </div>
             </a>
-
           </motion.div>
         </section>
       </article>
+      <article>
+        <section className="m-16">
+          <h2 className="font-bold text-4xl mb-24">Expériences professionnelles</h2>
+          <motion.div 
+             variants={variants}
+             initial="hide"
+             animate="show"
+             transition={{ ease: "anticipate", duration: "0.8" }}
+          className="my-12 flex justify-center items-center">
+            <div className="mx-16">
+              <img className="block w-24" src="/images/compagnies/inconito.png" aria-label="Logo de web6"/>
+            </div>
+            <div className="mx-16">
+              <ul className="list-none">
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}}><p style={{ backgroundColor: "#014d6f", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4" >2018 / 2019 (4 mois)</p></li>
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}}><p style={{ backgroundColor: "#014d6f", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4">Front-end</p></li>
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}} ><p style={{ backgroundColor: "#014d6f", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4">Intégrations de maquette et newsletters (mailchamp)</p></li>
+              </ul>
+            </div>
+          </motion.div>
+          <motion.div
+             variants={variants}
+             initial="hide"
+             animate="show"
+             transition={{ ease: "anticipate", duration: "0.8" }}
+          className="my-12 flex justify-center items-center">
+            <div className="mx-16">
+              <img className="block w-24" src="/images/compagnies/web6.png" aria-label="Logo de web6"/>
+            </div>
+            <div className="mx-16">
+              <ul className="list-none">
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}}><p style={{ backgroundColor: "#00ccff", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4" >2018 / 2019 (1 an)</p></li>
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}}><p style={{ backgroundColor: "#00ccff", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4">Full-stack</p></li>
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}}><p style={{ backgroundColor: "#00ccff", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4">Création d'une application web de centralisation de stocks</p></li>
+              </ul>
+            </div>
+          </motion.div>
+        </section>
+      </article>
+
     </Layout>
   );
 }
