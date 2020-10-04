@@ -1,8 +1,7 @@
 import Layout from "../components/Layout";
 import home_module from '../styles/pages/home.module.css';
-import Button from '../components/utils/Button';
-import Link from 'next/link';
 import { motion } from "framer-motion";
+import Contact from '../components/Contact';
 
 const variants = {
   hide: {
@@ -16,8 +15,9 @@ const variants = {
 }
 
 export default function Home() {
+  
   return (
-    <Layout home>
+    <Layout home>     
       <motion.div
         variants={variants}
         initial="hide"
@@ -27,7 +27,9 @@ export default function Home() {
         <div className={home_module.presentation_left}>
           <p className={home_module.left_title}>Bonjour, je suis Yann,</p>
           <p className={home_module.left_text}>un développeur web/mobile full stack</p>
-          <Button color="blue">Dites moi coucou !</Button>
+          <div>
+          <Contact />
+          </div>
         </div>
         <div className={home_module.presentation_right}>
           <p className={home_module.right_text}>Je suis un développeur basé à Toulouse. Je travail pour la compagnie <span className={home_module.langages}>Inconito</span> en tant qu'alternant, je suis sur ma première année d'experience avec le digital.<br />
@@ -88,37 +90,37 @@ export default function Home() {
       <article>
         <section className="m-16">
           <h2 className="font-bold text-4xl mb-24">Expériences professionnelles</h2>
-          <motion.div 
-             variants={variants}
-             initial="hide"
-             animate="show"
-             transition={{ ease: "anticipate", duration: "0.8" }}
-          className="my-12 flex justify-center items-center">
+          <motion.div
+            variants={variants}
+            initial="hide"
+            animate="show"
+            transition={{ ease: "anticipate", duration: "0.8" }}
+            className="my-12 flex justify-center items-center">
             <div className="mx-16">
-              <img className="block w-24" src="/images/compagnies/inconito.png" aria-label="Logo de web6"/>
+              <img className="block w-24" src="/images/compagnies/inconito.png" aria-label="Logo de web6" />
             </div>
             <div className="mx-16">
               <ul className="list-none">
-                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}}><p style={{ backgroundColor: "#014d6f", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4" >2018 / 2019 (4 mois)</p></li>
-                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}}><p style={{ backgroundColor: "#014d6f", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4">Front-end</p></li>
-                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}} ><p style={{ backgroundColor: "#014d6f", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4">Intégrations de maquette et newsletters (mailchamp)</p></li>
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px" }}><p style={{ backgroundColor: "#014d6f", lineHeight: "2.5rem", paddingRight: "1.1rem" }} className="inline-block rounded-md pl-4" >2018 / 2019 (1 an)</p></li>
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px" }}><p style={{ backgroundColor: "#014d6f", lineHeight: "2.5rem", paddingRight: "1.1rem" }} className="inline-block rounded-md pl-4">Front-end</p></li>
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px" }} ><p style={{ backgroundColor: "#014d6f", lineHeight: "2.5rem", paddingRight: "1.1rem" }} className="inline-block rounded-md pl-4">Intégrations de maquette et newsletters (mailchamp)</p></li>
               </ul>
             </div>
           </motion.div>
           <motion.div
-             variants={variants}
-             initial="hide"
-             animate="show"
-             transition={{ ease: "anticipate", duration: "0.8" }}
-          className="my-12 flex justify-center items-center">
+            variants={variants}
+            initial="hide"
+            animate="show"
+            transition={{ ease: "anticipate", duration: "0.8" }}
+            className="my-12 flex justify-center items-center">
             <div className="mx-16">
-              <img className="block w-24" src="/images/compagnies/web6.png" aria-label="Logo de web6"/>
+              <img className="block w-24" src="/images/compagnies/web6.png" aria-label="Logo de web6" />
             </div>
             <div className="mx-16">
               <ul className="list-none">
-                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}}><p style={{ backgroundColor: "#00ccff", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4" >2018 / 2019 (1 an)</p></li>
-                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}}><p style={{ backgroundColor: "#00ccff", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4">Full-stack</p></li>
-                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px"}}><p style={{ backgroundColor: "#00ccff", lineHeight: "2.5rem", paddingRight: "1.1rem"}} className="inline-block rounded-md pl-4">Création d'une application web de centralisation de stocks</p></li>
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px" }}><p style={{ backgroundColor: "#00ccff", lineHeight: "2.5rem", paddingRight: "1.1rem" }} className="inline-block rounded-md pl-4" >2018 / 2019 (4 mois)</p></li>
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px" }}><p style={{ backgroundColor: "#00ccff", lineHeight: "2.5rem", paddingRight: "1.1rem" }} className="inline-block rounded-md pl-4">Full-stack</p></li>
+                <li className="w-auto text-white font-semibold text-xl h-8" style={{ margin: "0.8rem 0", width: "600px" }}><p style={{ backgroundColor: "#00ccff", lineHeight: "2.5rem", paddingRight: "1.1rem" }} className="inline-block rounded-md pl-4">Création d'une application web de centralisation de stocks</p></li>
               </ul>
             </div>
           </motion.div>
