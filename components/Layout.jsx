@@ -4,6 +4,14 @@ import header_module from '../styles/layout/header.module.css';
 import Link_button from './utils/Link_button';
 import Contact from '../components/Contact';
 
+const shadow_images = {
+  width: "50px",
+  margin: "0 auto",
+  filter: "drop-shadow(3px 3px 3px var(--button-blue))",
+  hover: "opacity: '0.9'"
+  
+}
+
 export default function Layout({ children, home }) {
   return (
     <>
@@ -40,27 +48,27 @@ export default function Layout({ children, home }) {
         </Link_button>
       )
       }
-      <footer className="m-8 border-t-2 border-solid border-gray-300 p-6 text-gray-700">
+      <footer className="m-8 border-t-2 border-solid border-gray-300 text-gray-700 flex items-center justify-around">
         <div className="p-6">
-          <ul className="flex justify-center">
-            <li className="flex-1 text-center">
-              <Link href="projects" ><a className="font-light text-xl" aria-label="Lien vers la page mes projets">Mes projets</a></Link>
+          <ul className="list-disc">
+            <li className="m-16">
+              <Link href="projects" ><a className={header_module.link} aria-label="Lien vers la page mes projets">Mes projets</a></Link>
             </li>
-            <li className="flex-1 text-center">
+            <li className="m-16">
               <Contact link />
             </li>
           </ul>
         </div>
-        <div className="p-8">
-          <ul className="flex justify-start">
-            <li className="flex-1 text-center">
-              <Link href="/"><a aria-label="" className="flex-1 text-center">Twitter</a></Link>
+        <div className="p-6">
+          <ul className="">
+            <li className="m-12">
+             <a href="https://twitter.com/Anonymze" target="_blank" aria-label="Lien sortant vers mon Twitter"><img className="hover:opacity-75" style={ shadow_images } src="/images/socials/twitter.png" aria-label="Logo twitter" /></a>
             </li>
-            <li className="flex-1 text-center">
-              <Link href="/"><a aria-label="" className="flex-1 text-center">Facebook</a></Link>
+            <li className="m-12">
+             <a href="https://www.facebook.com/yann.metier/" target="_blank" aria-label="Lien sortant vers mon facebook"><img className="hover:opacity-75" style={ shadow_images } style={ shadow_images } src="/images/socials/facebook.png" aria-label="Logo facebook" /></a>
             </li>
-            <li className="flex-1 text-center">
-              <p>Yann | Ano, @discord: Ano#9999</p>
+            <li className="m-12">
+              <p className={header_module.link}>Yann | Ano, @discord: Ano#9999</p>
             </li>
           </ul>
         </div>

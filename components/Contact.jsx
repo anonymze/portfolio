@@ -5,7 +5,7 @@ import header_module from '../styles/layout/header.module.css';
 
 const customStyles = {
     content: {
-        top: '-100px',
+        top: '-150px',
         left: '50%',
         right: 'auto',
         bottom: 'auto',
@@ -52,7 +52,7 @@ export default function Contact({ link }) {
     function closeModal() {
         setIsOpen(false);
         setCopySuccess('');
-        customStyles.content.top = "-200px"
+        customStyles.content.top = "-150px"
     }
 
     const copyToClipboard = () => {
