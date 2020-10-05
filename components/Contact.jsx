@@ -17,7 +17,6 @@ const customStyles = {
         borderRadius: '5px',
         border: "1px solid #d2d1d1",
         transition: "0.3s"
-
     }
 };
 

@@ -7,5 +7,15 @@
 }
 
 .link:hover {
-    opacity: 0.9;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 500px) {
+  .link {
+    margin: 0 2rem;
+    padding-right: 4.8rem;
+    background-color: var(--button-blue);
+    box-shadow: 0 4px 14px 0 var(--button-blue);
+    transition: opacity 0.1s;
+  }
 }

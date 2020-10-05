@@ -15,7 +15,8 @@
 }
 
 .logo {
-  width: 80px;
+  width: 100px;
+  border-radius: 50%;
 }
 
 .links {
@@ -27,4 +28,19 @@
   color: var(--color-light);
   font-size: 20px;
   font-weight: 300;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+  .links {
+    display: flex;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .link {
+    margin: 0 1rem;
+  }
 }

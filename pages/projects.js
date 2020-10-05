@@ -26,7 +26,7 @@ export default function Home() {
               initial="hide"
               animate="show"
               transition={{ ease: "anticipate", duration: "0.4" }}
-              className="relative flex m-10 w-2/5 bg-pink-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-magenta)' }}>
+              className="card relative flex m-10 w-2/5 md:w-full md:min-w-full bg-pink-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-magenta)' }}>
 
               <div className="w-1/2 p-16">
                 <p className="text-xl text-white">2020</p>
@@ -50,7 +50,7 @@ export default function Home() {
               variants={variants}
               initial="hide"
               animate="show"
-              transition={{ ease: "anticipate", duration: "0.4" }} className="m-10 w-2/5" style={{ minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-green)' }}>
+              transition={{ ease: "anticipate", duration: "0.4" }} className="card m-10 w-2/5 md:w-full md:min-w-full" style={{ minWidth: "800px", height: "500px", boxShadow: '0 4px 14px 0 var(--button-green)' }}>
             <Link href="https://github.com/anonymze/centralisation_laravel">
               <a target="_blank" className="flex h-full w-full bg-green-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" >
                 <div className="w-1/2 p-16">

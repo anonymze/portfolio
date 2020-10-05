@@ -1,14 +1,12 @@
-@import url('../utils/_reset.css');
-@import url('../utils/_colors.css');
-@import url('../utils/_fonts.css');
-@import url('../utils/_responsive.css');
+@import url("../utils/_reset.css");
+@import url("../utils/_colors.css");
+@import url("../utils/_fonts.css");
 
 /* purgecss start ignore */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 /* purgecss end ignore */
 @import "tailwindcss/utilities";
-
 
 /* @tailwind base;
 
@@ -43,16 +41,62 @@ button:hover {
   opacity: 0.9;
 }
 
-
-
 /* responsive font-size */
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(6px + 6 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1024px) {
   html {
     font-size: 16px;
+  }
+
+  .card {
+    height: 400px !important;
+    min-width: 100% !important;
+  }
+
+  main {
+    margin: 9rem 1.5rem 4rem 1.5rem;
+  }
+
+  .card div {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .card div:first-of-type {
+    padding: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    margin: 4rem 1rem 2rem 1rem;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  footer ul,
+  li {
+    list-style: none;
+  }
+
+  footer ul li {
+    margin: 1.5rem !important;
+  }
+
+  footer div {
+    padding: 0 !important;
+  }
+
+  .card div:first-of-type {
+    padding: 1rem !important;
   }
 }
