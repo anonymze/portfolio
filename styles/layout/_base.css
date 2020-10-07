@@ -61,18 +61,67 @@ button:hover {
     padding-bottom: 1rem !important;
   }
 
-  .card div:first-of-type {
+  .card .mid-block-1 {
     padding: 2rem !important;
+    position: relative;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+  .mid-block-1 div {
+    bottom: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .li {
+    width: 100% !important;
+    margin: 1rem !important;
+  }
+
+  section {
+    padding-bottom: 2rem !important;
+  }
+
+  .work div {
+    margin: 0 !important;
+  }
+
+  h2 {
+    margin-bottom: 1rem !important;
+  }
+
+  .title-projects {
+    margin: 2rem 0 0 0 !important;
+  }
+
+  .card .mid-block-1 {
+    padding: 1rem !important;
+    width: 80%;
+  }
+
+  .card .mid-block-2 {
+    width: 30%;
+  }
+
+  .mid-block-1 div {
+    bottom: 0rem !important;
+  }
+
+  .mid-block-1 div img {
+    width: 2.5rem;
+  }
+
+  .card h3 {
+    font-size: 2rem;
+    line-height: 2rem !important;
   }
 }
 
 @media screen and (max-width: 500px) {
   main {
-    margin: 4rem 1rem 2rem 1rem;
-  }
-
-  .card {
-    height: 200px;
+    margin: 3rem 1rem 2rem 1rem;
   }
 
   footer {
@@ -80,12 +129,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
-  }
-
-  footer ul,
-  li {
-    list-style: none;
+    margin: 3rem 1rem 1rem 1rem !important;
   }
 
   footer ul li {
@@ -96,7 +140,16 @@ button:hover {
     padding: 0 !important;
   }
 
-  .card div:first-of-type {
-    padding: 1rem !important;
+  section {
+    margin: 1rem !important;
+    padding-bottom: 1 !important;
+  }
+
+  h2 {
+    margin-bottom: 0 !important;
+  }
+
+  .work ul {
+    margin-left: -1.5rem;
   }
 }

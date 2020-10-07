@@ -74,14 +74,14 @@ export default function Home() {
             className="flex flex-wrap justify-center w-100 "
           >
             <div
-              className="card relative flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
+              className="card flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
                 height: "450px",
                 boxShadow: "0 4px 14px 0 var(--button-purple)",
               }}
             >
-              <div className="w-1/2 p-12 m-1">
+              <div className="w-1/2 p-12 m-1 mid-block-1">
                 <p className="text-xl text-white">2020</p>
                 <h3
                   className="text-5xl font-bold text-white mt-2 mb-16"
@@ -103,7 +103,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="w-1/2 py-8">
+              <div className="w-1/2 py-8 mid-block-2">
                 <img
                   className="block w-full h-full rounded-l-md object-cover object-left"
                   alt=""
@@ -113,14 +113,14 @@ export default function Home() {
             </div>
 
             <a
-              className="card relative flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
+              className="card flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
                 height: "450px",
                 boxShadow: "0 4px 14px 0 var(--button-blue)",
               }}
             >
-              <div className="w-1/2 p-12 m-1">
+              <div className="w-1/2 p-12 m-1 mid-block-1">
                 <p className="text-xl text-white">2020</p>
                 <h3
                   className="text-5xl font-bold text-white mt-2 mb-16"
@@ -154,7 +154,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="w-1/2 py-8">
+              <div className="w-1/2 py-8 mid-block-2">
                 <img
                   className="block w-full h-full rounded-l-md object-cover object-left"
                   alt=""
@@ -175,10 +175,11 @@ export default function Home() {
             initial="hide"
             animate="show"
             transition={{ ease: "anticipate", duration: "0.8" }}
-            className="my-12 flex justify-center items-center"
+            className="work my-12 flex justify-center items-center"
           >
             <div className="mx-16">
               <img
+                style={{ minWidth: "6rem" }}
                 className="block w-24"
                 src="/images/compagnies/inconito.png"
                 aria-label="Logo de web6"
@@ -187,13 +188,16 @@ export default function Home() {
             <div className="mx-16">
               <ul className="list-none">
                 <li
-                  className="w-auto text-white font-semibold text-xl h-8"
-                  style={{ margin: "0.8rem 0", width: "600px" }}
+                  className="li w-auto text-white font-semibold text-xl h-8"
+                  style={{
+                    margin: "0.8rem 0",
+                    width: "600px",
+                  }}
                 >
                   <p
                     style={{
                       backgroundColor: "#014d6f",
-                      lineHeight: "2.5rem",
+                      lineHeight: "2rem",
                       paddingRight: "1.1rem",
                     }}
                     className="inline-block rounded-md pl-4"
@@ -202,13 +206,13 @@ export default function Home() {
                   </p>
                 </li>
                 <li
-                  className="w-auto text-white font-semibold text-xl h-8"
+                  className="li w-auto text-white font-semibold text-xl h-8"
                   style={{ margin: "0.8rem 0", width: "600px" }}
                 >
                   <p
                     style={{
                       backgroundColor: "#014d6f",
-                      lineHeight: "2.5rem",
+                      lineHeight: "2rem",
                       paddingRight: "1.1rem",
                     }}
                     className="inline-block rounded-md pl-4"
@@ -217,13 +221,13 @@ export default function Home() {
                   </p>
                 </li>
                 <li
-                  className="w-auto text-white font-semibold text-xl h-8"
+                  className="li w-auto text-white font-semibold text-xl h-8"
                   style={{ margin: "0.8rem 0", width: "600px" }}
                 >
                   <p
                     style={{
                       backgroundColor: "#014d6f",
-                      lineHeight: "2.5rem",
+                      lineHeight: "2rem",
                       paddingRight: "1.1rem",
                     }}
                     className="inline-block rounded-md pl-4"
@@ -239,10 +243,11 @@ export default function Home() {
             initial="hide"
             animate="show"
             transition={{ ease: "anticipate", duration: "0.8" }}
-            className="my-12 flex justify-center items-center"
+            className="work my-12 flex justify-center items-center"
           >
             <div className="mx-16">
               <img
+                style={{ minWidth: "6rem" }}
                 className="block w-24"
                 src="/images/compagnies/web6.png"
                 aria-label="Logo de web6"
@@ -251,13 +256,13 @@ export default function Home() {
             <div className="mx-16">
               <ul className="list-none">
                 <li
-                  className="w-auto text-white font-semibold text-xl h-8"
+                  className="li w-auto text-white font-semibold text-xl h-8"
                   style={{ margin: "0.8rem 0", width: "600px" }}
                 >
                   <p
                     style={{
                       backgroundColor: "#00ccff",
-                      lineHeight: "2.5rem",
+                      lineHeight: "2rem",
                       paddingRight: "1.1rem",
                     }}
                     className="inline-block rounded-md pl-4"
@@ -266,13 +271,13 @@ export default function Home() {
                   </p>
                 </li>
                 <li
-                  className="w-auto text-white font-semibold text-xl h-8"
+                  className="li w-auto text-white font-semibold text-xl h-8"
                   style={{ margin: "0.8rem 0", width: "600px" }}
                 >
                   <p
                     style={{
                       backgroundColor: "#00ccff",
-                      lineHeight: "2.5rem",
+                      lineHeight: "2rem",
                       paddingRight: "1.1rem",
                     }}
                     className="inline-block rounded-md pl-4"
@@ -281,13 +286,13 @@ export default function Home() {
                   </p>
                 </li>
                 <li
-                  className="w-auto text-white font-semibold text-xl h-8"
+                  className="li w-auto text-white font-semibold text-xl h-8"
                   style={{ margin: "0.8rem 0", width: "600px" }}
                 >
                   <p
                     style={{
                       backgroundColor: "#00ccff",
-                      lineHeight: "2.5rem",
+                      lineHeight: "2rem",
                       paddingRight: "1.1rem",
                     }}
                     className="inline-block rounded-md pl-4"

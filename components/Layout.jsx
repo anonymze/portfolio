@@ -3,13 +3,14 @@ import Head from 'next/head';
 import header_module from '../styles/layout/header.module.css';
 import Link_button from './utils/Link_button';
 import Contact from '../components/Contact';
+import { isMobile } from "react-device-detect";
+
 
 const shadow_images = {
   width: "50px",
   margin: "0 auto",
   filter: "drop-shadow(3px 3px 3px var(--button-blue))",
-  hover: "opacity: '0.9'"
-  
+  hover: "opacity: '0.9'"  
 }
 
 export default function Layout({ children, home }) {
@@ -50,7 +51,7 @@ export default function Layout({ children, home }) {
       }
       <footer className="m-8 border-t-2 border-solid border-gray-300 text-gray-700 flex items-center justify-around">
         <div className="p-6">
-          <ul className="list-disc">
+          <ul>
             <li className="m-16">
               <Link href="projects" ><a className={header_module.link} aria-label="Lien vers la page mes projets">Mes projets</a></Link>
             </li>
@@ -68,7 +69,7 @@ export default function Layout({ children, home }) {
              <a href="https://www.facebook.com/yann.metier/" target="_blank" aria-label="Lien sortant vers mon facebook"><img className="hover:opacity-75" style={ shadow_images } style={ shadow_images } src="/images/socials/facebook.png" aria-label="Logo facebook" /></a>
             </li>
             <li className="m-12">
-              <p className={header_module.link}>Yann | Ano, @discord: Ano#9999</p>
+              <p className={header_module.link}>@discord: Ano#9999</p>
             </li>
           </ul>
         </div>
