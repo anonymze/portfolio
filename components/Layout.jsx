@@ -50,23 +50,23 @@ export default function Layout({ children, home }) {
       <footer className="m-8 border-t-2 border-solid border-gray-300 text-gray-700 flex items-center justify-around">
         <div className="p-6">
           <ul>
-            <li className="m-16">
+            <li className="m-16 align-center">
               <Link href="projects" ><a className={header_module.link} aria-label="Lien vers la page mes projets">Mes projets</a></Link>
             </li>
-            <li className="m-16">
+            <li className="m-16 align-center">
               <Contact link />
             </li>
           </ul>
         </div>
         <div className="p-6">
           <ul className="">
-            <li className="m-12">
+            <li className="m-12 align-center">
              <a href="https://twitter.com/Anonymze" target="_blank" aria-label="Lien sortant vers mon Twitter"><img className="hover:opacity-75" style={ shadow_images } src="/images/socials/twitter.png" aria-label="Logo twitter" /></a>
             </li>
-            <li className="m-12">
+            <li className="m-12 align-center">
              <a href="https://www.facebook.com/yann.metier/" target="_blank" aria-label="Lien sortant vers mon facebook"><img className="hover:opacity-75" style={ shadow_images } style={ shadow_images } src="/images/socials/facebook.png" aria-label="Logo facebook" /></a>
             </li>
-            <li className="m-12">
+            <li className="m-12 align-center">
               <p className={header_module.link}>@discord: Ano#9999</p>
             </li>
           </ul>
