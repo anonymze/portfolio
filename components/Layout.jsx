@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" key="viewport" />
         <meta properity="og:type" contenu="siteweb" />
-        <meta property="og:url" contenu="https://www.portfolio-dev-yann.fr" />
+        <meta property="og:url" contenu="https://portfolio-1idtcrv22.vercel.app/" />
         <meta property="og:image" contenu="/images/moi.png"/>
         <meta property="og:locale" contenu="fr_FR"/>
         <meta property="og:description" contenu="Mon portfolio professionnel, ce site web regroupera mes informations concernant mes activités au sein du marché du travail."/>
