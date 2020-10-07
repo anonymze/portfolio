@@ -18,23 +18,21 @@ export default function Layout({ children, home }) {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>Yann | Portfolio</title>
+        <title>Portfolio | Yann METIER</title>
         <meta
           name="description"
-          content="Web developer portfolio, full-stack, only 1 year of experience."
+          content="Portfolio d'un web développeur français, full-stack, avec une année d'expérience. J'ai travaillé à Inconito et Web6 deux sociétés basées sur Toulouse."
         />
-        {/* <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            site_title
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content='{site_title}' />
-        <meta name="twitter:card" content="summary_large_image" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" key="viewport" />
+        <meta properity="og:type" contenu="siteweb" />
+        <meta property="og:url" contenu="https://www.portfolio-dev-yann.fr" />
+        <meta property="og:image" contenu="/images/moi.png"/>
+        <meta property="og:locale" contenu="fr_FR"/>
+        <meta property="og:description" contenu="Mon portfolio professionnel, ce site web regroupera mes informations concernant mes activités au sein du marché du travail."/>
       </Head>
       <header className={header_module.header}>
         <nav className={header_module.nav}>
-          <Link href="/" ><a aria-label="Click to return to home page"><img className={header_module.logo} src="/images/moi.png" alt="Profil web developer" /></a></Link>
+          <Link href="/" ><a aria-label="Portrait de Yann METIER, un click dessus retourne à la page d'accueil"><img className={header_module.logo} src="/images/moi.png" alt="Profil du web développeur" /></a></Link>
           <div className={header_module.links}>
             <Link href="projects"><a className={header_module.link} aria-label="Lien vers la page mes projets">Mes projets</a></Link>
             <Contact link />

@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const variants = {
   hide: {
@@ -16,6 +17,9 @@ const variants = {
 export default function Home() {
   return (
     <Layout>
+      <Head>
+        <title>Portfolio | Mes projets</title>
+      </Head>
       <article>
         <h2 className="title-projects m-12 font-bold text-4xl mb-12">
           Projets récents
