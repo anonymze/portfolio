@@ -35,16 +35,17 @@ export default function Home() {
         </div>
         <div className={home_module.presentation_right}>
           <p className={home_module.right_text}>
-            Je suis un développeur basé à Toulouse. Je travail pour la compagnie{" "}
+            Je suis développeur basé à Toulouse. Je travaille pour l'agence{" "}
             <span className={home_module.langages}>Inconito</span> en tant
-            qu'alternant, je suis sur ma deuxième année d'experience avec le
+            qu'alternant depuis 1 an et compte deux ans d'expérience dans le
             digital.
             <br />
-            J'ai une expérience junior avec l'
-            <span className={home_module.langages}>HTML</span>, le{" "}
-            <span className={home_module.langages}>JS</span> et le{" "}
+            J'ai une expérience junior en
+            <span className={home_module.langages}>HTML</span>,
+            <span className={home_module.langages}>JS</span> et
             <span className={home_module.langages}>CSS</span>, et je me
-            familiarise avec les frameworks{" "}
+            familiarise avec les frameworks React, NextJs, Laravel, Ionic,
+            Drupal.
             <span className={home_module.langages}>React</span>,{" "}
             <span className={home_module.langages}>NextJs</span>,{" "}
             <span className={home_module.langages}>Laravel</span>,{" "}
@@ -52,13 +53,13 @@ export default function Home() {
             <span className={home_module.langages}>Drupal</span>.
           </p>
           <p className={home_module.right_text}>
-            Je vise à accumuler de l'expérience{" "}
-            <span className={home_module.langages}>full-stack</span> pour la
-            polyvalence et l'autonomie.
+            Mon objectif est d'accumuler de l'expérience{" "}
+            <span className={home_module.langages}>full-stack</span> pour gagner
+            en polyvalence et en autonomie.
           </p>
           <p className={home_module.right_text}>
-            Je fais énormément d'intégration mais je recherche un bagage plus
-            important en back-end.
+            Je fais actuellement beaucoup d'intégration mais recherche à
+            approfondir mes compétences back-end.
           </p>
         </div>
       </motion.div>
