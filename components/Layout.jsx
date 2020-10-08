@@ -60,10 +60,10 @@ export default function Layout({ children, home }) {
         </div>
         <div className="p-6">
           <ul className="">
-            <li className="m-12  text-center">
+            <li className="m-12 text-center">
              <a href="https://twitter.com/Anonymze" target="_blank" aria-label="Lien sortant vers mon Twitter"><img className="hover:opacity-75" style={ shadow_images } src="/images/socials/twitter.png" aria-label="Logo twitter" /></a>
             </li>
-            <li className="m-12 a text-center">
+            <li className="m-12 text-center">
              <a href="https://www.facebook.com/yann.metier/" target="_blank" aria-label="Lien sortant vers mon facebook"><img className="hover:opacity-75" style={ shadow_images } style={ shadow_images } src="/images/socials/facebook.png" aria-label="Logo facebook" /></a>
             </li>
             <li className="m-12 align-center">
