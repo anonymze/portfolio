@@ -24,7 +24,7 @@ export default function Home() {
         <section>
           <h2 className="title-projects m-12 font-bold text-4xl mb-12">
             Projets récents
-        </h2>
+          </h2>
           <motion.div
             variants={variants}
             initial="hide"
@@ -32,7 +32,10 @@ export default function Home() {
             transition={{ ease: "anticipate", duration: "0.8" }}
             className="flex flex-wrap justify-center w-100 "
           >
-            <a href="https://github.com/anonymze/centralisation_laravel" target="_blank" aria-label="Lien vers le github du projet centralsiation de stock"
+            <a
+              href="https://github.com/anonymze/centralisation_laravel"
+              target="_blank"
+              aria-label="Lien vers le github du projet centralsiation de stock"
               className="card flex m-10 w-2/5 bg-green-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
@@ -43,7 +46,7 @@ export default function Home() {
               <div className="w-1/2 p-12 m-1 mid-block-1">
                 <p className="text-xl text-white">2020</p>
                 <h3
-                  className="text-5xl font-bold text-white mt-2 mb-16"
+                  className="text-5xl font-bold text-white mt-2 mb-10"
                   style={{ lineHeight: "3rem" }}
                 >
                   Centralisation de stock
@@ -87,7 +90,7 @@ export default function Home() {
               <div className="w-1/2 p-12 m-1 mid-block-1">
                 <p className="text-xl text-white">2020</p>
                 <h3
-                  className="text-5xl font-bold text-white mt-2 mb-16"
+                  className="text-5xl font-bold text-white mt-2 mb-10"
                   style={{ lineHeight: "3rem" }}
                 >
                   Portfolio
@@ -126,8 +129,6 @@ export default function Home() {
                 />
               </div>
             </div>
-
-
           </motion.div>
         </section>
       </article>
