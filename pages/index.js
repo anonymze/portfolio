@@ -112,7 +112,7 @@ export default function Home() {
               </div>
             </div>
 
-            <a
+            <div
               className="card flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
@@ -161,7 +161,7 @@ export default function Home() {
                   src="/images/images_card/smash_lab.png"
                 />
               </div>
-            </a>
+            </div>
           </motion.div>
         </section>
       </article>
