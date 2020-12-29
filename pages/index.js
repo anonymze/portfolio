@@ -58,7 +58,7 @@ export default function Home() {
           </p>
           <p className={home_module.right_text}>
             Je fais actuellement beaucoup d'intégration mais recherche à
-            approfondir mes compétences back-end.
+            approfondir mes compétences en back.
           </p>
         </div>
       </motion.div>
