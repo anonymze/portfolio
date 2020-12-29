@@ -35,17 +35,16 @@ export default function Home() {
         </div>
         <div className={home_module.presentation_right}>
           <p className={home_module.right_text}>
-            Je suis développeur basé à Toulouse. Je travaille pour l'agence{" "}
+            Je suis un développeur basé à Toulouse. J'ai travaillé pour l'agence{" "}
             <span className={home_module.langages}>Inconito</span> en tant
-            qu'alternant depuis 1 an et compte deux ans d'expérience dans le
+            qu'alternant pendant 1 année et compte deux ans d'expérience dans le
             digital.
             <br />
             J'ai une expérience junior en
-            <span className={home_module.langages}>HTML</span>,
-            <span className={home_module.langages}>JS</span> et
+            <span className={home_module.langages}>HTML</span>, 
+            <span className={home_module.langages}>JS</span> et 
             <span className={home_module.langages}>CSS</span>, et je me
-            familiarise avec les frameworks React, NextJs, Laravel, Ionic,
-            Drupal.
+            familiarise avec les frameworks 
             <span className={home_module.langages}>React</span>,{" "}
             <span className={home_module.langages}>NextJs</span>,{" "}
             <span className={home_module.langages}>Laravel</span>,{" "}
