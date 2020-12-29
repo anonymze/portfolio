@@ -40,7 +40,7 @@ export default function Home() {
             qu'alternant pendant 1 année et compte deux ans d'expérience dans le
             digital.
             <br />
-            J'ai une expérience junior en <span className={home_module.langages}>HTML</span>, <span className={home_module.langages}>JS</span> et<span className={home_module.langages}>CSS</span>, et je me familiarise avec les frameworks <span className={home_module.langages}>React</span>, <span className={home_module.langages}>NextJs</span>,  <span className={home_module.langages}>Laravel</span>, <span className={home_module.langages}>Ionic</span>, <span className={home_module.langages}>Drupal</span>.
+            J'ai une expérience junior en <span className={home_module.langages}>HTML</span>, <span className={home_module.langages}>JS</span> et <span className={home_module.langages}>CSS</span>, et je me familiarise avec les frameworks <span className={home_module.langages}>React</span>, <span className={home_module.langages}>NextJs</span>,  <span className={home_module.langages}>Laravel</span>, <span className={home_module.langages}>Ionic</span>, <span className={home_module.langages}>Drupal</span>.
           </p>
           <p className={home_module.right_text}>
             Mon objectif est d'accumuler de l'expérience{" "}
