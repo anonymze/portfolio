@@ -190,7 +190,7 @@ export default function Home() {
                       backgroundColor: "#014d6f",
                       lineHeight: "2rem",
                       paddingRight: "1.1rem",
-                      padding-bottom: "0.3rem",
+                      paddingBottom: "0.3rem",
                     }}
                     className="inline-block rounded-md pl-4"
                   >
@@ -206,7 +206,7 @@ export default function Home() {
                       backgroundColor: "#014d6f",
                       lineHeight: "2rem",
                       paddingRight: "1.1rem",
-                      padding-bottom: "0.3rem",
+                      paddingBottom: "0.3rem",
                     }}
                     className="inline-block rounded-md pl-4"
                   >
@@ -222,7 +222,7 @@ export default function Home() {
                       backgroundColor: "#014d6f",
                       lineHeight: "2rem",
                       paddingRight: "1.1rem",
-                      padding-bottom: "0.3rem",
+                      paddingBottom: "0.3rem",
                     }}
                     className="inline-block rounded-md pl-4"
                   >
@@ -257,8 +257,8 @@ export default function Home() {
                     style={{
                       backgroundColor: "#00ccff",
                       lineHeight: "2rem",
-                       paddingRight: "1.1rem"
-                      padding-bottom: "0.3rem",
+                       paddingRight: "1.1rem",
+                      paddingBottom: "0.3rem",
                     }}
                     className="inline-block rounded-md pl-4"
                   >
@@ -273,8 +273,8 @@ export default function Home() {
                     style={{
                       backgroundColor: "#00ccff",
                       lineHeight: "2rem",
-                      paddingRight: "1.1rem"
-                      padding-bottom: "0.3rem",
+                      paddingRight: "1.1rem",
+                      paddingBottom: "0.3rem",
                     }}
                     className="inline-block rounded-md pl-4"
                   >
@@ -289,8 +289,8 @@ export default function Home() {
                     style={{
                       backgroundColor: "#00ccff",
                       lineHeight: "2rem",
-                       paddingRight: "1.1rem"
-                      padding-bottom: "0.3rem",
+                       paddingRight: "1.1rem",
+                      paddingBottom: "0.3rem",
                     }}
                     className="inline-block rounded-md pl-4"
                   >
