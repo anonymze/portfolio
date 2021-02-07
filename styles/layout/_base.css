@@ -32,9 +32,7 @@ body {
 }
 
 main {
-  margin: 9rem 1.5rem 14rem 1.5rem;
-  padding-top: 3.5rem;
-  /* border-top: 2px solid rgba(226, 232, 240, 1);   */
+  margin: 4rem 1.5rem 14rem 1.5rem;
 }
 
 button:hover {
@@ -53,7 +51,7 @@ button:hover {
   }
 
   main {
-    margin: 9rem 1.5rem 4rem 1.5rem;
+    margin: 4rem 1.5rem 4rem 1.5rem;
   }
 
   .card div {
@@ -121,7 +119,7 @@ button:hover {
 
 @media screen and (max-width: 500px) {
   main {
-    margin: 3rem 1rem 2rem 1rem;
+    margin: 1rem 1rem 2rem 1rem;
   }
 
   footer {

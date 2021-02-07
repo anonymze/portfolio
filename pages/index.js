@@ -64,13 +64,17 @@ export default function Home() {
             transition={{ ease: "anticipate", duration: "0.8" }}
             className="flex flex-wrap justify-center w-100 "
           >
-            <div
+            <a
               className="card flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
                 height: "450px",
                 boxShadow: "0 4px 14px 0 var(--button-purple)",
               }}
+              target="_blank"
+              href="https://asso-gaming-t5.vercel.app/"
+
+              alt="Lien sortant vers le site T5"
             >
               <div className="w-1/2 p-12 m-1 mid-block-1">
                 <p className="text-xl text-white">2020</p>
@@ -101,7 +105,7 @@ export default function Home() {
                   src="/images/images_card/t5.png"
                 />
               </div>
-            </div>
+            </a>
 
             <div
               className="card flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"

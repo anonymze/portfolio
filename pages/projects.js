@@ -35,7 +35,7 @@ export default function Home() {
             <a
               href="https://github.com/anonymze/centralisation_laravel"
               target="_blank"
-              aria-label="Lien vers le github du projet centralsiation de stock"
+              aria-label="Lien vers le github du projet centralisation de stock"
               className="card flex m-10 w-2/5 bg-green-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
