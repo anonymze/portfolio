@@ -100,13 +100,7 @@ export default function Home() {
                   <br />
                   Application web
                 </p>
-                <div className="absolute" style={{ bottom: "4rem" }}>
-                  <img
-                    className="inline-block w-12 mx-2 object-cover object-left"
-                    src="/images/icones_langage/wordpress.png"
-                    alt="Logo NextJs"
-                    title="NextJs"
-                  />
+                <div className="absolute" style={{ bottom: "4rem" }}>                
                   <img
                     className="inline-block w-12 mx-2 object-cover object-left"
                     src="/images/icones_langage/react.png"

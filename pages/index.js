@@ -72,7 +72,7 @@ export default function Home() {
                 boxShadow: "0 4px 14px 0 var(--button-purple)",
               }}
               target="_blank"
-              href="https://asso-gaming-t5.vercel.app/"
+              href="https://asso-gaming-t5-14h18eqr5.vercel.app/"
 
               alt="Lien sortant vers le site T5"
             >
@@ -92,9 +92,15 @@ export default function Home() {
                 <div className="absolute" style={{ bottom: "4rem" }}>
                   <img
                     className="inline-block w-12 mx-2 object-cover object-left"
-                    src="/images/icones_langage/wordpress.png"
-                    alt="Logo wordpress"
-                    title="Wordpress"
+                    src="/images/icones_langage/nextjs.png"
+                    alt="Logo Next"
+                    title="Nextjs"
+                  />
+                  <img
+                    className="inline-block w-12 mx-2 object-cover object-left"
+                    src="/images/icones_langage/strapi.png"
+                    alt="Logo Strapi"
+                    title="Strapi"
                   />
                 </div>
               </div>
@@ -108,11 +114,11 @@ export default function Home() {
             </a>
 
             <div
-              className="card flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
+              className="card flex m-10 w-2/5 bg-indigo-900 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
                 height: "450px",
-                boxShadow: "0 4px 14px 0 var(--button-blue)",
+                boxShadow: "0 4px 14px 0 var(--button-indigo)",
               }}
             >
               <div className="w-1/2 p-12 m-1 mid-block-1">
@@ -157,6 +163,111 @@ export default function Home() {
                 />
               </div>
             </div>
+
+            <a
+              className="card flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
+              style={{
+                minWidth: "730px",
+                height: "450px",
+                boxShadow: "0 4px 14px 0 var(--button-blue)",
+              }}
+              target="_blank"
+              href="https://zipfinder-194a3.web.app/"
+
+              alt="Lien sortant vers le site T5"
+            >
+              <div className="w-1/2 p-12 m-1 mid-block-1">
+                <p className="text-xl text-white">2021</p>
+                <h3
+                  className="text-5xl font-bold text-white mt-2 mb-10"
+                  style={{ lineHeight: "3rem" }}
+                >
+                  Chercheur de zip code
+                </h3>
+                <p className="text-xl text-white leading-8">
+                  Front-end développement
+                  <br />
+                  Application web/mobile
+                </p>
+                <div className="absolute" style={{ bottom: "4rem" }}>
+                <img
+                    className="inline-block w-12 mx-2 object-cover object-left"
+                    src="/images/icones_langage/vuejs.png"
+                    alt="Logo Vuejs"
+                    title="Vuejs"
+                  />
+                  <img
+                    className="inline-block w-12 mx-2 object-cover object-left"
+                    src="/images/icones_langage/ionic.png"
+                    alt="Logo ionic"
+                    title="ionic"
+                  />
+                  <img
+                    className="inline-block w-12 mx-2 object-cover object-left"
+                    src="/images/icones_langage/pwa.png"
+                    alt="Logo PWA"
+                    title="PWA"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2 py-8 mid-block-2">
+                <img
+                  className="block w-full h-full rounded-l-md object-cover object-left"
+                  alt=""
+                  src="/images/images_card/zip.png"
+                />
+              </div>
+            </a>
+
+            <a
+              className="card flex m-10 w-2/5 bg-yellow-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
+              style={{
+                minWidth: "730px",
+                height: "450px",
+                boxShadow: "0 4px 14px 0 var(--button-yellow)",
+              }}
+              target="_blank"
+              href="http://amplifyapp-20210211012931-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com/"
+
+              alt="Lien sortant vers le site T5"
+            >
+              <div className="w-1/2 p-12 m-1 mid-block-1">
+                <p className="text-xl text-white">2021</p>
+                <h3
+                  className="text-5xl font-bold text-white mt-2 mb-10"
+                  style={{ lineHeight: "3rem" }}
+                >
+                  Propositions d'idées
+                </h3>
+                <p className="text-xl text-white leading-8">
+                  Full-stack développement
+                  <br />
+                  Application web
+                </p>
+                <div className="absolute" style={{ bottom: "4rem" }}>
+                <img
+                    className="inline-block w-12 mx-2 object-cover object-left"
+                    src="/images/icones_langage/vuejs.png"
+                    alt="Logo Vuejs"
+                    title="Vuejs"
+                  />
+                  <img
+                    className="inline-block w-12 mx-2 object-cover object-left"
+                    src="/images/icones_langage/amplify.png"
+                    alt="Logo amplify"
+                    title="amplify"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2 py-8 mid-block-2">
+                <img
+                  className="block w-full h-full rounded-l-md object-cover object-left"
+                  alt=""
+                  src="/images/images_card/idees.png"
+                />
+              </div>
+            </a>
+
           </motion.div>
         </section>
       </article>
@@ -261,7 +372,7 @@ export default function Home() {
                     style={{
                       backgroundColor: "#00ccff",
                       lineHeight: "2rem",
-                       paddingRight: "1.1rem",
+                      paddingRight: "1.1rem",
                       paddingBottom: "0.3rem",
                     }}
                     className="inline-block rounded-md pl-4"
@@ -293,7 +404,7 @@ export default function Home() {
                     style={{
                       backgroundColor: "#00ccff",
                       lineHeight: "2rem",
-                       paddingRight: "1.1rem",
+                      paddingRight: "1.1rem",
                       paddingBottom: "0.3rem",
                     }}
                     className="inline-block rounded-md pl-4"
