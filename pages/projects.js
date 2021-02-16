@@ -23,7 +23,7 @@ export default function Home() {
       <article>
         <section>
           <h2 className="title-projects m-12 font-bold text-4xl mb-12">
-            Projets récents
+            Projets terminés
           </h2>
           <motion.div
             variants={variants}
@@ -96,7 +96,7 @@ export default function Home() {
                   Portfolio
                 </h3>
                 <p className="text-xl text-white leading-8">
-                  Full-stack développement
+                  Front-end développement
                   <br />
                   Application web
                 </p>
