@@ -37,8 +37,7 @@ export default function Home() {
           <p className={home_module.right_text}>
             Je suis un développeur basé à Toulouse. J'ai travaillé pour l'agence{" "}
             <span className={home_module.langages}>Inconito</span> en tant
-            qu'alternant pendant 1 année et compte deux ans d'expérience dans le
-            digital.
+            qu'alternant pendant 1 année.
             <br />
             J'ai une expérience junior en <span className={home_module.langages}>HTML</span>, <span className={home_module.langages}>JS</span> et <span className={home_module.langages}>CSS</span>, et je me familiarise avec les frameworks <span className={home_module.langages}>React</span>, <span className={home_module.langages}>NextJs</span>,  <span className={home_module.langages}>Laravel</span>, <span className={home_module.langages}>Ionic</span>, <span className={home_module.langages}>Drupal</span>.
           </p>
