@@ -34,7 +34,7 @@ export default function Layout({ children, home }) {
         <nav className={header_module.nav}>
           <Link href="/" ><a aria-label="Portrait de Yann METIER, un click dessus retourne à la page d'accueil"><img className={header_module.logo} src="/images/moi.png" alt="Profil du web développeur" /></a></Link>
           <div className={header_module.links}>
-            <Link href="projects"><a className={header_module.link} aria-label="Lien vers la page mes projets">Projets finis</a></Link>
+            <Link href="projects"><a className={header_module.link} aria-label="Lien vers la page mes projets">Projets en cours</a></Link>
             <Contact link />
           </div>
         </nav>
@@ -51,7 +51,7 @@ export default function Layout({ children, home }) {
         <div className="p-6">
           <ul>
             <li className="m-16 text-center">
-              <Link href="projects" ><a className={header_module.link} aria-label="Lien vers la page mes projets">Mes projets</a></Link>
+              <Link href="projects" ><a className={header_module.link} aria-label="Lien vers la page mes projets">Projets en cours</a></Link>
             </li>
             <li className="m-16 text-center">
               <Contact link />
@@ -61,14 +61,9 @@ export default function Layout({ children, home }) {
         <div className="p-6">
           <ul className="">
             <li className="m-12 text-center">
-             <a href="https://twitter.com/Anonymze" target="_blank" aria-label="Lien sortant vers mon Twitter"><img className="hover:opacity-75" style={ shadow_images } src="/images/socials/twitter.png" aria-label="Logo twitter" /></a>
+             <a href="https://www.linkedin.com/in/yann-metier-147706156/" target="_blank" aria-label="Lien sortant vers mon linkedin"><img className="hover:opacity-75" style={ shadow_images } style={ shadow_images } src="/images/socials/linkedin.png" aria-label="Logo linkedin" /></a>
             </li>
-            <li className="m-12 text-center">
-             <a href="https://www.facebook.com/yann.metier/" target="_blank" aria-label="Lien sortant vers mon facebook"><img className="hover:opacity-75" style={ shadow_images } style={ shadow_images } src="/images/socials/facebook.png" aria-label="Logo facebook" /></a>
-            </li>
-            <li className="m-12 align-center">
-              <p className={header_module.link}>@discord: Ano#9999</p>
-            </li>
+            
           </ul>
         </div>
       </footer>

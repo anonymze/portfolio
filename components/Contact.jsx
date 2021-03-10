@@ -65,11 +65,11 @@ export default function Contact({ link }) {
         copied.style.opacity = "1";
         copied.style.top = "0.8rem";
         const mail = document.getElementById('mail');
-        const el = document.createElement('textarea');
-        el.value = mail.innerHTML;
+        const el = document.createElement('textarea');        
         el.setAttribute('readonly', '');
         el.style.position = 'absolute';
         el.style.left = '-9999px';
+        el.value = mail.innerHTML;
         document.body.appendChild(el);
         el.select();
         document.execCommand('copy');
@@ -98,7 +98,7 @@ export default function Contact({ link }) {
                 <svg onClick={copyToClipboard} style={{ width: "30px", display: "inline-block", cursor: "pointer" }} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="black">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                 </svg>
-                <span id="copied" style={{ color: "#805ad5", position: "absolute", top: "2rem", right: "0.5rem", opacity: "0", visibility: "hidden", transition: "0.2s" }}>{(copySuccess) ? copySuccess : ''}</span>
+                <span id="copied" style={{ color: "#805ad5", position: "absolute", top: "2rem", right: "0.5rem", opacity: "0", visibility: "hidden", transition: "0.2s", fontWeight: 600 }}>{(copySuccess) ? copySuccess : ''}</span>
                 <div style={{ width: "100%" }} onClick={closeModal}>
                     <Button color="blue" width>D'accord</Button>
                 </div>

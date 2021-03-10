@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import Link from "next/link";
+import Layout from "../../components/Layout";
+// import Link from "next/link";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
@@ -14,7 +14,7 @@ const variants = {
   },
 };
 
-export default function Home() {
+export default function Projects() {
   return (
     <Layout>
       <Head>
@@ -22,8 +22,7 @@ export default function Home() {
       </Head>
       <article>
         <section>
-          <h2 className="title-projects m-12 font-bold text-4xl mb-12">
-            Projets terminés
+          <h2 className="title-projects m-12 font-bold text-4xl mb-12">            
           </h2>
           <motion.div
             variants={variants}
@@ -103,9 +102,9 @@ export default function Home() {
                 <div className="absolute" style={{ bottom: "4rem" }}>                
                   <img
                     className="inline-block w-12 mx-2 object-cover object-left"
-                    src="/images/icones_langage/react.png"
-                    alt="Logo React"
-                    title="React"
+                    src="/images/icones_langage/nextjs.png"
+                    alt="Logo Nextjs"
+                    title="Nextjs"
                   />
                   <img
                     className="inline-block w-12 mx-2 object-cover object-left"

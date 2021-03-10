@@ -1,7 +1,9 @@
 import Layout from "../components/Layout";
 import home_module from "../styles/pages/home.module.css";
+import ButtonCard from '../components/utils/ButtonCard'
 import { motion } from "framer-motion";
 import Contact from "../components/Contact";
+import { useEffect } from "react";
 
 const variants = {
   hide: {
@@ -15,6 +17,18 @@ const variants = {
 };
 
 export default function Home() {
+  useEffect(() => {
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mouseenter', function (e) {
+        e.target.querySelector('.buttons-card').classList.remove('hide');
+      })
+      card.addEventListener('mouseleave', function (e) {
+        e.target.querySelector('.buttons-card').classList.add('hide');
+      })
+    })
+  }, [])
+
+
   return (
     <Layout home>
       <motion.div
@@ -36,46 +50,43 @@ export default function Home() {
         <div className={home_module.presentation_right}>
           <p className={home_module.right_text}>
             Je suis un développeur basé à Toulouse. J'ai travaillé pour l'agence{" "}
-            <span className={home_module.langages}>Inconito</span> en tant
-            qu'alternant pendant 1 année.
+            <span className={home_module.langages}>Inconito</span> pendant 1 année.<br />
             <br />
-            J'ai une expérience junior en <span className={home_module.langages}>HTML</span>, <span className={home_module.langages}>JS</span> et <span className={home_module.langages}>CSS</span>, et je me familiarise avec les frameworks <span className={home_module.langages}>React</span>, <span className={home_module.langages}>NextJs</span>,  <span className={home_module.langages}>Laravel</span>, <span className={home_module.langages}>Ionic</span>, <span className={home_module.langages}>Drupal</span>.
+            Je maitrîse les 3 langages principaux du web dev <span className={home_module.langages}>(HTML</span>, <span className={home_module.langages}>CSS,</span> <span className={home_module.langages}>JS)</span> et je me familiarise avec les frameworks JS comme <span className={home_module.langages}>React</span>, <span className={home_module.langages}>NextJs</span>,  <span className={home_module.langages}>Vuejs</span>, <span className={home_module.langages}>Ionic</span> et <span className={home_module.langages}>React native</span>.<br />Je reste tout de même ouvert à d'autres languages/frameworks puisque j'ai déjà réalisé des applications sous Laravel ou encore Drupal et Wordpress pour les CMS.
           </p>
           <p className={home_module.right_text}>
             Mon objectif est d'accumuler de l'expérience{" "}
             <span className={home_module.langages}>full-stack</span> pour gagner
-            en polyvalence et en autonomie.
-          </p>
-          <p className={home_module.right_text}>
-            Je fais actuellement beaucoup d'intégration mais recherche à
-            approfondir mes compétences en back.
+            en polyvalence et en autonomie, c'est pourquoi le front comme le back m'attirent tout autant.
           </p>
         </div>
       </motion.div>
       <article className="border-t-2 border-solid border-gray-300 border-b-2">
         <section className="mt-16 mx-16 pb-48 ">
-          <h2 className="font-bold text-4xl mb-12">Projets en cours</h2>
+          <h2 className="font-bold text-4xl mb-12">Projets terminés</h2>
 
           <motion.div
             variants={variants}
             initial="hide"
             animate="show"
             transition={{ ease: "anticipate", duration: "0.8" }}
-            className="flex flex-wrap justify-center w-100 "
+            className="flex flex-wrap justify-center w-100"
           >
-            <a
+            <div
               className="card flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
                 height: "450px",
                 boxShadow: "0 4px 14px 0 var(--button-purple)",
               }}
-              target="_blank"
-              href="https://asso-gaming-t5-14h18eqr5.vercel.app/"
 
-              alt="Lien sortant vers le site T5"
             >
+              <div className="buttons-card absolute hide">
+                <ButtonCard project="T5" see_project="https://asso-gaming-t5.vercel.app/">Voir app</ButtonCard>
+                <ButtonCard project="T5" details_project="/projects/t5">Voir détails</ButtonCard>
+              </div>
               <div className="w-1/2 p-12 m-1 mid-block-1">
+
                 <p className="text-xl text-white">2020</p>
                 <h3
                   className="text-5xl font-bold text-white mt-2 mb-10"
@@ -110,71 +121,43 @@ export default function Home() {
                   src="/images/images_card/t5.png"
                 />
               </div>
-            </a>
+            </div>
 
-            <div
-              className="card flex m-10 w-2/5 bg-indigo-900 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
-              style={{
-                minWidth: "730px",
-                height: "450px",
-                boxShadow: "0 4px 14px 0 var(--button-indigo)",
-              }}
-            >
+            <div className="card flex m-10 w-2/5 bg-indigo-900 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "730px", height: "450px", boxShadow: "0 4px 14px 0 var(--button-indigo)" }}>
+              <div className="buttons-card absolute hide">
+                <ButtonCard project="Smash Lab" see_project="#">Voir app</ButtonCard>
+                <ButtonCard project="Smash Lab" details_project="/projects/smash">Voir détails</ButtonCard>
+              </div>
               <div className="w-1/2 p-12 m-1 mid-block-1">
                 <p className="text-xl text-white">2020</p>
-                <h3
-                  className="text-5xl font-bold text-white mt-2 mb-10"
-                  style={{ lineHeight: "3rem" }}
-                >
-                  Smash Lab
-                </h3>
-                <p className="text-xl text-white leading-8">
-                  Full-stack développement
-                  <br />
-                  Application mobile
-                </p>
-                <div className="absolute" style={{ bottom: "4rem" }}>
-                  <img
-                    className="inline-block w-12 mx-2"
-                    src="/images/icones_langage/ionic.png"
-                    alt="Logo Ionic"
-                    title="Ionic"
-                  />
-                  <img
-                    className="inline-block w-12 mx-2"
-                    src="/images/icones_langage/typescript.png"
-                    alt="Logo Typescript"
-                    title="Typescript"
-                  />
-                  <img
-                    className="inline-block w-12 mx-2"
-                    src="/images/icones_langage/laravel.png"
-                    alt="Logo Laravel"
-                    title="Laravel"
-                  />
+                <h3 className="text-5xl font-bold text-white mt-2 mb-10" style={{ lineHeight: "3rem" }}>Smash Lab</h3>
+                <p className="text-xl text-white leading-8">Full-stack développement<br />Application mobile</p>
+                <div className="absolute" style={{ bottom: '4rem' }}>
+                  <img className="inline-block w-12 mx-2" src="/images/icones_langage/ionic.png" alt="Logo Ionic" title="Ionic" />
+                  <img className="inline-block w-12 mx-2" src="/images/icones_langage/typescript.png" alt="Logo Typescript" title="Typescript" />
+                  <img className="inline-block w-12 mx-2" src="/images/icones_langage/laravel.png" alt="Logo Laravel" title="Laravel" />
                 </div>
               </div>
               <div className="w-1/2 py-8 mid-block-2">
-                <img
-                  className="block w-full h-full rounded-l-md object-cover object-left"
-                  alt=""
-                  src="/images/images_card/smash_lab.png"
-                />
+                <img className="block w-full h-full rounded-l-md object-cover object-left" alt="" src="/images/images_card/smash_lab.png" />
               </div>
             </div>
 
-            <a
-              className="card flex m-10 w-2/5 bg-blue-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
+            <div
+              className="card flex m-10 w-2/5 bg-blue-500 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
                 height: "450px",
                 boxShadow: "0 4px 14px 0 var(--button-blue)",
               }}
-              target="_blank"
               href="https://zipfinder-194a3.web.app/"
 
-              alt="Lien sortant vers le site T5"
+              alt="Lien sortant vers zip code"
             >
+               <div className="buttons-card absolute hide">
+                <ButtonCard project="Zip code" see_project="https://zipfinder-194a3.web.app/">Voir app</ButtonCard>
+                <ButtonCard project="Zip code" details_project="/projects/zip">Voir détails</ButtonCard>
+              </div>
               <div className="w-1/2 p-12 m-1 mid-block-1">
                 <p className="text-xl text-white">2021</p>
                 <h3
@@ -189,7 +172,7 @@ export default function Home() {
                   Application web/mobile
                 </p>
                 <div className="absolute" style={{ bottom: "4rem" }}>
-                <img
+                  <img
                     className="inline-block w-12 mx-2 object-cover object-left"
                     src="/images/icones_langage/vuejs.png"
                     alt="Logo Vuejs"
@@ -216,27 +199,30 @@ export default function Home() {
                   src="/images/images_card/zip.png"
                 />
               </div>
-            </a>
+            </div>
 
-            <a
+            <div
               className="card flex m-10 w-2/5 bg-yellow-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
                 height: "450px",
                 boxShadow: "0 4px 14px 0 var(--button-yellow)",
               }}
-              target="_blank"
               href="http://amplifyapp-20210211012931-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com/"
 
-              alt="Lien sortant vers le site T5"
+              alt="Lien sortant vers le site boite à idées"
             >
+             <div className="buttons-card absolute hide">
+                <ButtonCard project="Boite à idées" see_project="http://amplifyapp-20210211012931-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com/">Voir app</ButtonCard>
+                <ButtonCard project="Boite à idées" details_project="/projects/idea">Voir détails</ButtonCard>
+              </div>
               <div className="w-1/2 p-12 m-1 mid-block-1">
                 <p className="text-xl text-white">2021</p>
                 <h3
                   className="text-5xl font-bold text-white mt-2 mb-10"
                   style={{ lineHeight: "3rem" }}
                 >
-                  Propositions d'idées
+                  Boîte à idées
                 </h3>
                 <p className="text-xl text-white leading-8">
                   Full-stack développement
@@ -244,7 +230,7 @@ export default function Home() {
                   Application web
                 </p>
                 <div className="absolute" style={{ bottom: "4rem" }}>
-                <img
+                  <img
                     className="inline-block w-12 mx-2 object-cover object-left"
                     src="/images/icones_langage/vuejs.png"
                     alt="Logo Vuejs"
@@ -265,7 +251,65 @@ export default function Home() {
                   src="/images/images_card/idees.png"
                 />
               </div>
-            </a>
+            </div>
+
+            <div
+              className="card flex m-10 w-2/5 bg-green-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
+              style={{
+                minWidth: "730px",
+                height: "450px",
+                boxShadow: "0 4px 14px 0 var(--button-green)",
+              }}
+              href="http://amplifyapp-20210211012931-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com/"
+
+              alt="Lien sortant vers le site boite à idées"
+            >
+             <div className="buttons-card absolute hide">
+                <ButtonCard project="Boite à idées" see_project="https://codepen.io/Anonymze/pen/eYBjVxR">Voir app</ButtonCard>
+                <ButtonCard project="Fadeaway cartes" details_project="/projects/zoom-out-cards">Voir détails</ButtonCard>
+              </div>
+              <div className="w-1/2 p-12 m-1 mid-block-1">
+                <p className="text-xl text-white">2021</p>
+                <h3
+                  className="text-5xl font-bold text-white mt-2 mb-10"
+                  style={{ lineHeight: "3rem" }}
+                >
+                  FadeAway cartes
+                </h3>
+                <p className="text-xl text-white leading-8">
+                  Front-end développement
+                  <br />
+                  Application web/mobile
+                </p>
+                <div className="absolute" style={{ bottom: "4rem" }}>
+                  <img
+                    className="inline-block w-12 mx-2 object-cover object-left"
+                    src="/images/icones_langage/html.png"
+                    alt="Logo HTML5"
+                    title="HTML"
+                  />
+                  <img
+                    className="inline-block w-12 mx-2 object-cover object-left"
+                    src="/images/icones_langage/css.png"
+                    alt="Logo css"
+                    title="CSS"
+                  />
+                  <img
+                    className="inline-block w-12 mx-2 object-cover object-left"
+                    src="/images/icones_langage/js.png"
+                    alt="Javascript"
+                    title="Logo javascript"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2 py-8 mid-block-2">
+                <img
+                  className="block w-full h-full rounded-l-md object-cover object-left"
+                  alt=""
+                  src="/images/images_card/cartes.png"
+                />
+              </div>
+            </div>
 
           </motion.div>
         </section>
@@ -324,7 +368,7 @@ export default function Home() {
                     }}
                     className="inline-block rounded-md pl-4"
                   >
-                    Front-end
+                    Full-stack
                   </p>
                 </li>
                 <li
@@ -340,7 +384,7 @@ export default function Home() {
                     }}
                     className="inline-block rounded-md pl-4"
                   >
-                    Intégrations de maquette et newsletters (mailchamp)
+                    Intégrations de maquette et de newsletter (Mailchimp)
                   </p>
                 </li>
               </ul>
