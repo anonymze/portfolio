@@ -33,6 +33,7 @@ export default function Layout({ children, home }) {
       <header className={header_module.header}>
         <nav className={header_module.nav}>
           <Link href="/" ><a aria-label="Portrait de Yann METIER, un click dessus retourne à la page d'accueil"><img className={header_module.logo} src="/images/moi.png" alt="Profil du web développeur" /></a></Link>
+          <h1>PORTFOLIO</h1>
           <div className={header_module.links}>
             <Link href="projects"><a className={header_module.link} aria-label="Lien vers la page mes projets">Projets en cours</a></Link>
             <Contact link />

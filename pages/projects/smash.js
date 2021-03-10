@@ -6,6 +6,7 @@ export default function Smash() {
             <Head>
                 <title>Portfolio | Smash Lab</title>
             </Head>
+            <h1>EN COURS DE CRÉATION</h1>
         </Layout>
     )
 }

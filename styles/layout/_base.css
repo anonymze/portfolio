@@ -35,6 +35,21 @@ main {
   margin: 4rem 1.5rem 10rem 1.5rem;
 }
 
+h1 {
+  font-size: 30px;
+  line-height: 3.55rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  padding-left: 1.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  h1 {
+    display: none;
+  }
+}
+
+
 button:hover {
   opacity: 0.8;
 }

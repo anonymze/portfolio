@@ -6,6 +6,7 @@ export default function Idea() {
             <Head>
                 <title>Portfolio | Boîte à idée</title>
             </Head>
+            <h1>EN COURS DE CRÉATION</h1>
         </Layout>
     )
 }
