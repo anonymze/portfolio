@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import home_module from "../styles/pages/home.module.css";
-import ButtonCard from '../components/utils/ButtonCard'
+import ButtonCard from '../components/utils/ButtonCard';
 import { motion } from "framer-motion";
 import Contact from "../components/Contact";
 import { useEffect } from "react";
@@ -82,7 +82,7 @@ export default function Home() {
 
             >
               <div className="buttons-card absolute hide">
-                <ButtonCard project="T5" see_project="https://asso-gaming-t5.vercel.app/">Voir app</ButtonCard>
+                <ButtonCard project="T5" see_project="https://asso-gaming-t5-anonymze.vercel.app/">Voir app</ButtonCard>
                 <ButtonCard project="T5" details_project="/projects/t5">Voir détails</ButtonCard>
               </div>
               <div className="w-1/2 p-12 m-1 mid-block-1">
@@ -125,7 +125,7 @@ export default function Home() {
 
             <div className="card flex m-10 w-2/5 bg-indigo-900 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "730px", height: "450px", boxShadow: "0 4px 14px 0 var(--button-indigo)" }}>
               <div className="buttons-card absolute hide">
-                <ButtonCard project="Smash Lab" see_project="#">Voir app</ButtonCard>
+                <ButtonCard project="Smash Lab" details_project="#">Voir app</ButtonCard>
                 <ButtonCard project="Smash Lab" details_project="/projects/smash">Voir détails</ButtonCard>
               </div>
               <div className="w-1/2 p-12 m-1 mid-block-1">

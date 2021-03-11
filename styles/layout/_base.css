@@ -54,6 +54,10 @@ button:hover {
   opacity: 0.8;
 }
 
+.bg-gradient-to-r {
+  box-shadow: 0 2px 14px 0 #f56565 !important;
+}
+
 .buttons-card {
   inset: 50% auto auto 80%;
   transform: translate(-50%, -50%);

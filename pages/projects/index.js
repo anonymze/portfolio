@@ -1,5 +1,4 @@
 import Layout from "../../components/Layout";
-// import Link from "next/link";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
@@ -22,7 +21,8 @@ export default function Projects() {
       </Head>
       <article>
         <section>
-          <h2 className="title-projects m-12 font-bold text-4xl mb-12">            
+          <h2 className="title-projects m-12 font-bold text-4xl mb-12">    
+          En progression        
           </h2>
           <motion.div
             variants={variants}
