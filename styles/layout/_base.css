@@ -49,13 +49,19 @@ h1 {
   }
 }
 
-
 button:hover {
   opacity: 0.8;
 }
 
 .bg-gradient-to-r {
   box-shadow: 0 2px 14px 0 #f56565 !important;
+  background: linear-gradient(
+    90deg,
+    rgba(196, 22, 196, 0.438) 0%,
+    rgba(185, 39, 137, 0.7035014689469538) 35%,
+    rgba(177, 62, 27, 0.514) 72%,
+    rgba(255, 0, 104, 0.5130252784707633) 100%
+  ) !important; 
 }
 
 .buttons-card {
