@@ -125,7 +125,7 @@ export default function Home() {
 
             <div className="card flex m-10 w-2/5 bg-indigo-900 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "730px", height: "450px", boxShadow: "0 4px 14px 0 var(--button-indigo)" }}>
               <div className="buttons-card absolute hide">
-                <ButtonCard project="Smash Lab" details_project="#">Voir app</ButtonCard>
+                <ButtonCard project="Smash Lab" >Voir app</ButtonCard>
                 <ButtonCard project="Smash Lab" details_project="/projects/smash">Voir détails</ButtonCard>
               </div>
               <div className="w-1/2 p-12 m-1 mid-block-1">
