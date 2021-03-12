@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import { useEffect } from "react";
 
 const variants = {
   hide: {
@@ -14,6 +15,9 @@ const variants = {
 };
 
 export default function Projects() {
+  useEffect(() => {
+    document.body.scrollIntoView();
+}, [])
   return (
     <Layout>
       <Head>
@@ -128,3 +132,6 @@ export default function Projects() {
     </Layout>
   );
 }
+
+
+

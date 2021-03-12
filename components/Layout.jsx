@@ -10,10 +10,10 @@ const shadow_images = {
   width: "50px",
   margin: "0 auto",
   filter: "drop-shadow(3px 3px 3px var(--button-blue))",
-  hover: "opacity: '0.9'"  
+  hover: "opacity: '0.9'"
 }
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, link }) {
   return (
     <>
       <Head>
@@ -26,16 +26,16 @@ export default function Layout({ children, home }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" key="viewport" />
         <meta properity="og:type" contenu="siteweb" />
         <meta property="og:url" contenu="https://portfolio-1idtcrv22.vercel.app/" />
-        <meta property="og:image" contenu="/images/moi.png"/>
-        <meta property="og:locale" contenu="fr_FR"/>
-        <meta property="og:description" contenu="Mon portfolio professionnel, ce site web regroupera mes informations concernant mes activités au sein du marché du travail."/>
+        <meta property="og:image" contenu="/images/moi.png" />
+        <meta property="og:locale" contenu="fr_FR" />
+        <meta property="og:description" contenu="Mon portfolio professionnel, ce site web regroupera mes informations concernant mes activités au sein du marché du travail." />
       </Head>
       <header className={header_module.header}>
         <nav className={header_module.nav}>
           <Link href="/" ><a aria-label="Portrait de Yann METIER, un click dessus retourne à la page d'accueil"><img className={header_module.logo} src="/images/moi.png" alt="Profil du web développeur" /></a></Link>
           <h1>PORTFOLIO</h1>
           <div className={header_module.links}>
-            <Link href="projects"><a className={header_module.link} aria-label="Lien vers la page mes projets">Projets en cours</a></Link>
+            <Link href="/projects"><a className={header_module.link} aria-label="Lien vers la page mes projets">Projets en cours</a></Link>
             <Contact link />
           </div>
         </nav>
@@ -43,7 +43,7 @@ export default function Layout({ children, home }) {
 
       <main>{children}</main>
       {!home && (
-        <Link_button>
+        <Link_button link={link}>
           Accueil
         </Link_button>
       )
@@ -52,7 +52,7 @@ export default function Layout({ children, home }) {
         <div className="p-6">
           <ul>
             <li className="m-16 text-center">
-              <Link href="projects" ><a className={header_module.link} aria-label="Lien vers la page mes projets">Projets en cours</a></Link>
+              <Link href="/projects" ><a className={header_module.link} aria-label="Lien vers la page mes projets">Projets en cours</a></Link>
             </li>
             <li className="m-16 text-center">
               <Contact link />
@@ -62,12 +62,18 @@ export default function Layout({ children, home }) {
         <div className="p-6">
           <ul className="">
             <li className="m-12 text-center">
-             <a href="https://www.linkedin.com/in/yann-metier-147706156/" target="_blank" aria-label="Lien sortant vers mon linkedin"><img className="hover:opacity-75" style={ shadow_images } style={ shadow_images } src="/images/socials/linkedin.png" aria-label="Logo linkedin" /></a>
+              <a href="https://www.linkedin.com/in/yann-metier-147706156/" target="_blank" aria-label="Lien sortant vers mon linkedin"><img className="hover:opacity-75" style={shadow_images} style={shadow_images} src="/images/socials/linkedin.png" aria-label="Logo linkedin" /></a>
             </li>
-            
           </ul>
         </div>
       </footer>
+      <style global jsx>
+        {`
+       html {
+          scroll-behavior: smooth;
+        }
+      `}
+      </style>
     </>
   )
 }

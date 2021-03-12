@@ -1,9 +1,15 @@
 import Head from "next/head";
 import Layout from "../../components/Layout";
-import ButtonCard from '../../components/utils/ButtonCard'
+import ButtonCard from '../../components/utils/ButtonCard';
+import { useEffect } from "react";
+
+
 export default function Smash() {
+    useEffect(() => {
+        document.body.scrollIntoView();
+    }, [])
     return (
-        <Layout>
+        <Layout link="card2">
             <Head>
                 <title>Portfolio | Smash Lab</title>
             </Head>
@@ -15,7 +21,7 @@ export default function Smash() {
                     </h2>
                 </section>
                 <section className="border-solid border-gray-300 border-b-2">                    
-                    <h2 class="font-bold text-4xl md:m-16 my-8">Concept</h2>
+                    <h2 className="font-bold text-4xl md:m-16 my-8">Concept</h2>
                     <p className="md:m-16 my-8 mx-4 md:text-justify">
                         <strong>« Super Smash Bros. Ultimate »</strong> est un jeu de combat composé de beaucoup de personnages jouables. C’est un jeu Nintendo qui s’est imposé dans le monde de la compétition et qui demande énormément de <strong>stratégies et de techniques</strong>. Le nombre de joueurs grandit d’années en années et le manque d’outils pour aider les joueurs dans leur progression se fait ressentir.
 
@@ -25,7 +31,7 @@ export default function Smash() {
                  </p>
                 </section>
                 <section>
-                    <h2 class="font-bold text-4xl md:m-16 my-8">Techniques</h2>
+                    <h2 className="font-bold text-4xl md:m-16 my-8">Techniques</h2>
                     <p className="md:m-16 my-8 mx-4 md:text-justify">
                         La partie UX fût pour moi la plus importante du projet, c'est pourquoi j'ai été au contact de la communauté Smash Toulousaine avant de me lancer dans l'aventure. Très tôt l'idée d'une application mobile pour aider les joueurs est arrivée. En tournoi le téléphone est un outil que tout le monde possède sur soi pour analyser les brackets (les futurs matchs), ainsi il était naturel de leur proposer une app qui est sur ce même appareil.
                         <br />

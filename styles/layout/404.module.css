@@ -4,6 +4,7 @@
   height: 100vh;
   font-size: 20px;
   font-weight: 500;
+  padding: 0 !important;
 }
 
 .back_home {

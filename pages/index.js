@@ -26,6 +26,7 @@ export default function Home() {
         e.target.querySelector('.buttons-card').classList.add('hide');
       })
     })
+
   }, [])
 
 
@@ -73,6 +74,7 @@ export default function Home() {
             className="flex flex-wrap justify-center w-100"
           >
             <div
+              id="card1"
               className="card flex m-10 w-2/5 bg-purple-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
@@ -123,7 +125,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="card flex m-10 w-2/5 bg-indigo-900 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "730px", height: "450px", boxShadow: "0 4px 14px 0 var(--button-indigo)" }}>
+            <div id="card2" className="card flex m-10 w-2/5 bg-indigo-900 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105" style={{ minWidth: "730px", height: "450px", boxShadow: "0 4px 14px 0 var(--button-indigo)" }}>
               <div className="buttons-card absolute hide">
                 <ButtonCard project="Smash Lab" >Voir app</ButtonCard>
                 <ButtonCard project="Smash Lab" details_project="/projects/smash">Voir détails</ButtonCard>
@@ -144,17 +146,15 @@ export default function Home() {
             </div>
 
             <div
+                   id="card3"
               className="card flex m-10 w-2/5 bg-blue-500 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
                 height: "450px",
                 boxShadow: "0 4px 14px 0 var(--button-blue)",
               }}
-              href="https://zipfinder-194a3.web.app/"
-
-              alt="Lien sortant vers zip code"
             >
-               <div className="buttons-card absolute hide">
+              <div className="buttons-card absolute hide">
                 <ButtonCard project="Zip code" see_project="https://zipfinder-194a3.web.app/">Voir app</ButtonCard>
                 <ButtonCard project="Zip code" details_project="/projects/zip">Voir détails</ButtonCard>
               </div>
@@ -202,17 +202,15 @@ export default function Home() {
             </div>
 
             <div
+            id="card4"
               className="card flex m-10 w-2/5 bg-yellow-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
                 height: "450px",
                 boxShadow: "0 4px 14px 0 var(--button-yellow)",
-              }}
-              href="http://amplifyapp-20210211012931-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com/"
-
-              alt="Lien sortant vers le site boite à idées"
+              }}            
             >
-             <div className="buttons-card absolute hide">
+              <div className="buttons-card absolute hide">
                 <ButtonCard project="Boite à idées" see_project="http://amplifyapp-20210211012931-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com/">Voir app</ButtonCard>
                 <ButtonCard project="Boite à idées" details_project="/projects/idea">Voir détails</ButtonCard>
               </div>
@@ -254,17 +252,16 @@ export default function Home() {
             </div>
 
             <div
+                   id="card5"
               className="card flex m-10 w-2/5 bg-green-600 rounded-lg transform transition-transform duration-200 ease-in-out hover:scale-105"
               style={{
                 minWidth: "730px",
                 height: "450px",
                 boxShadow: "0 4px 14px 0 var(--button-green)",
               }}
-              href="http://amplifyapp-20210211012931-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com/"
-
-              alt="Lien sortant vers le site boite à idées"
+             
             >
-             <div className="buttons-card absolute hide">
+              <div className="buttons-card absolute hide">
                 <ButtonCard project="Boite à idées" see_project="https://codepen.io/Anonymze/pen/eYBjVxR">Voir app</ButtonCard>
                 <ButtonCard project="Fadeaway cartes" details_project="/projects/zoom-out-cards">Voir détails</ButtonCard>
               </div>
@@ -463,3 +460,4 @@ export default function Home() {
     </Layout>
   );
 }
+

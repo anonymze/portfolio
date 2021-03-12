@@ -1,21 +1,27 @@
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import ButtonCard from '../../components/utils/ButtonCard';
+import { useEffect } from "react";
+
+
 export default function Zip() {
+  useEffect(() => {
+    document.body.scrollIntoView();
+}, [])
   return (
-    <Layout>
+    <Layout link="card3">
       <Head>
         <title>Portfolio | Zip code</title>
       </Head>
       <article >
         <section className="border-solid border-gray-300 border-b-2">
-          <h2 class="font-bold text-4xl md:m-16 my-8">Concept</h2>
+          <h2 className="font-bold text-4xl md:m-16 my-8">Concept</h2>
           <p className="md:m-16 my-8 mx-4 md:text-justify">
             Un rechercheur de code postale, il vous indique d'où provient le zip code inséré.
           </p>
         </section>
         <section>
-          <h2 class="font-bold text-4xl md:m-16 my-8">Techniques</h2>
+          <h2 className="font-bold text-4xl md:m-16 my-8">Techniques</h2>
           <p className="md:m-16 my-8 mx-4 md:text-justify">
            Mes premières mains sur le framework <strong>VueJS</strong> et le <strong>Progressive Web App</strong>, combinés à <strong>Ionic</strong> pour une approche <strong>"mobile first"</strong>.
                     </p>

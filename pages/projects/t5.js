@@ -1,15 +1,20 @@
 import Layout from "../../components/Layout";
 import Head from "next/head";
 import ButtonCard from '../../components/utils/ButtonCard';
+import { useEffect } from "react";
+
 export default function TFive() {
+    useEffect(() => {
+        document.body.scrollIntoView();
+    }, [])
     return (
-        <Layout>
+        <Layout link="card1">
             <Head>
                 <title>Portfolio | Asso T5</title>
             </Head>
             <article >
                 <section className="border-solid border-gray-300 border-b-2">
-                    <h2 class="font-bold text-4xl md:m-16 my-8">Concept</h2>
+                    <h2 className="font-bold text-4xl md:m-16 my-8">Concept</h2>
                     <p className="md:m-16 my-8 mx-4 md:text-justify">
                         Ce site web sera l’outil principal de <strong>communication</strong> concernant les différentes <strong>équipes au sein de T5</strong>, nous mettrons régulièrement à jour les dernières aventures de chacune des équipes et des joueurs. <strong>Ce site vitrine vous tiendra à jour</strong> sur les tournois à venir, les gros évènements, ainsi que le profil des joueurs.<br/>
 
@@ -17,7 +22,7 @@ export default function TFive() {
                  </p>
                 </section>
                 <section>
-                    <h2 class="font-bold text-4xl md:m-16 my-8">Techniques</h2>
+                    <h2 className="font-bold text-4xl md:m-16 my-8">Techniques</h2>
                     <p className="md:m-16 my-8 mx-4 md:text-justify">
                         La partie UI / maquettage a été désignée par mon ami <strong>Bastien Langlais</strong>, voici son portfolio <a className="underline" target="_blank" rel="external" href="https://bastien-marketing-web.fr/">https://bastien-marketing-web.fr/</a> si son profil vous intéresse.<br/><br/>
 
